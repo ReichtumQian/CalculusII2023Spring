@@ -1,0 +1,90 @@
+site_name: 浙江大学 2023 微积分II（乙）课程笔记
+site_author: Reichtum
+site_url: https://github.com/ReichtumQian
+
+theme:
+  name: material
+  custom_dir: theme
+  font: false
+  # custom_dir: overrides
+  logo: img/logo.bmp
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - navigation.tabs
+
+  palette:
+    # Light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  # - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  # - pymdownx.superfences
+  # - pymdownx.details
+  # - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - roamlinks 
+  - mermaid2
+  - section-index
+  # - mkpdfs
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js 
+
+repo_name: Reichtum/CalculusII2023Spring
+repo_url: https://github.com/ReichtumQian/CalculusII2023Spring
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 简介: "index.md"
+  # - 课程笔记:
+  # - 作业题答案:
+  # - 习题课内容:
+
+
+
+
+
+
+
+
+
+
