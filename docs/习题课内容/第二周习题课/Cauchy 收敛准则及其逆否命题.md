@@ -18,6 +18,14 @@
 
 - 注意：先取的值不能与后取的值相关，例如 $\forall \epsilon, \exists N = p, \forall n > N, \forall p$ 这种取法是错误的。
 
+## 用 Cauchy 收敛准则判断敛散性
+
+> 用 Cauchy 收敛准则判断敛散性：
+>
+> (1) $\sum\limits_{n = 1}^{+\infty} (-1)^{n-1} \frac{1}{n}$
+>
+> (2) $\sum\limits_{n = 1}^{+\infty} \frac{1}{\sqrt{n^2 + n}}$
+
 ## 调和级数相关
 
 > (1) 证明 ${\displaystyle \sum\limits_{n = 1}^{+\infty} \frac{1}{n}}$ 发散
