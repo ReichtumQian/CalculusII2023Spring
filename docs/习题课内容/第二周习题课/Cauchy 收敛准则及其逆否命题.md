@@ -16,13 +16,26 @@
 >
 > $$ |S_{n+p} - S_n| \geq \epsilon$$
 
-- 注意：先取的值不能与后取的值相关，例如 $\forall \epsilon, \exists N = p, \forall n > N, \forall p$ 这种取法是错误的。
+- 注意：先取的值不能与后取的值相关。
 
 ## 用 Cauchy 收敛准则判断敛散性
 
 > 用 Cauchy 收敛准则判断敛散性：
 >
 > (1) $\sum\limits_{n = 1}^{+\infty} (-1)^{n-1} \frac{1}{n}$
+>
+> 典型错误：$n$ 为偶时
+>
+> $$
+\begin{align}
+|S_{n+p} - S_n| &= \left( \frac{1}{n+1} - \frac{1}{n+2} \right) + \cdots + \left( \frac{1}{n+p-1} - \frac{1}{n+p} \right)\\
+&= \frac{1}{(n+1)(n+2)} + \cdots + \frac{1}{(n+p-1)(n+p)}\\
+&< \frac{p}{n^2} < \frac{p}{n^2} + 1
+\end{align}$$
+>
+> 同理 $n$ 为奇时也有 $|S_{n+p}- S_n| < \frac{p}{n^2}+1$，因此取 $N = \sqrt{\frac{p}{\epsilon}}$，则 $n > N$ 时有
+>
+> $$ |S_{n+p} - S_n| < \frac{p}{n^2} + 1 = \epsilon $$
 >
 > (2) $\sum\limits_{n = 1}^{+\infty} \frac{1}{\sqrt{n^2 + n}}$
 
